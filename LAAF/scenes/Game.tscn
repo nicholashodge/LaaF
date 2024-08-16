@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://du1k24kq0h70h"]
+
+[ext_resource type="Texture2D" uid="uid://dg2h3cj7g7g7n" path="res://assets/black-kettlebell-clipart.webp" id="1_156wk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_meiol"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("1_156wk")
+region_enabled = true
+region_rect = Rect2(3.02009, 84.333, 106.121, 140.554)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_meiol")
